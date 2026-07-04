@@ -158,6 +158,8 @@ The project is organized into separate modules for the main Streamlit app, PDF p
 
 ## How to Run
 
+The commands below are intended for Windows.
+
 ```bash
 git clone https://github.com/mateusz-zarebski/AI-Learning-Assistant.git
 cd AI-Learning-Assistant
