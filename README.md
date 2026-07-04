@@ -1,6 +1,8 @@
 # AI Learning Assistant 📚
 
-AI Learning Assistant is a Streamlit web application built to support studying from PDF documents. Users can upload learning materials, preview the extracted text, generate structured study summaries, create multiple-choice quizzes from selected document chunks, and ask questions about the uploaded content. The application uses a modular pipeline: PDF text extraction, text cleaning, overlapping chunk generation, Gemini-based text generation, and lightweight retrieval-augmented question answering. For Q&A, local sentence-transformer embeddings are used to retrieve the most relevant chunks before passing the context to Gemini, helping keep answers focused on the source document.
+AI Learning Assistant is a **Streamlit web application** built to support studying from PDF documents. Users can upload learning materials, preview the extracted text, generate structured study summaries, create multiple-choice quizzes from selected document chunks, and ask questions about the uploaded content.
+
+The application uses a modular pipeline: **PDF text extraction**, **text cleaning**, **overlapping chunk generation**, **Gemini-based text generation**, and **lightweight retrieval-augmented question answering**. For Q&A, local sentence-transformer embeddings are used to retrieve the most relevant chunks before passing the context to Gemini, helping keep answers focused on the source document.
 
 ## Features
 
