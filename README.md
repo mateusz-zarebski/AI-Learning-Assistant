@@ -1,6 +1,6 @@
 # AI Learning Assistant 📚
 
-Streamlit web application that helps students learn from PDF documents.  
+Streamlit web application that helps students learn from PDF documents.
 The app allows users to upload a PDF, generate structured study summaries,
 create multiple-choice quizzes from selected document chunks,
 and ask questions about the document using lightweight retrieval-augmented generation.
