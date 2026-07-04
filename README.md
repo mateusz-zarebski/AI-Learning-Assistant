@@ -116,6 +116,29 @@ The Ask PDF tab retrieves the most relevant chunks using local embeddings and us
 
 7. The app includes debug and transparency features. Users can inspect selected quiz chunks, retrieved Q&A chunks, similarity scores, retrieval time, generation time, and partial summaries used during the map-reduce summarization process.
 
+## Project Structure
+
+The project is organized into separate modules for the main Streamlit app, PDF processing, Gemini integration, prompt templates, RAG retrieval, UI helpers, and each application tab. This keeps the code easier to maintain and makes the responsibilities of each file clear.
+
+```text
+AI-Learning-Assistant/
+├── app.py              # Main Streamlit entry point
+├── config.py           # Configuration values, model options, defaults, and session state keys
+├── ui.py               # Sidebar, API key input, session state setup, and PDF upload handling
+├── display_utils.py    # Streamlit display helpers, PDF preview, debug views, and download buttons
+├── pdf_utils.py        # PDF text extraction, text cleaning, and overlapping chunk generation
+├── gemini_utils.py     # Gemini API key handling, client creation, and text generation helper
+├── rag_utils.py        # Local embeddings, semantic similarity scoring, and relevant chunk retrieval
+├── prompts.py          # Prompt templates for summaries, quizzes, and PDF question answering
+├── summary_tab.py      # Summary tab logic and map-reduce summary generation
+├── quiz_tab.py         # Quiz tab logic, chunk selection, and quiz generation
+├── qa_tab.py           # Ask PDF tab logic, RAG retrieval, and answer generation
+├── requirements.txt    # Python dependencies
+├── assets/             # Screenshots used in the README
+├── LICENSE             # Project license
+└── README.md           # Project documentation
+```
+
 ## Technologies
 
 - **Python** - core programming language used for the application logic
@@ -151,29 +174,6 @@ This app requires a Gemini API key to generate summaries, quizzes, and answers.
 You can get a Gemini API key from Google AI Studio: https://aistudio.google.com/app/apikey
 
 After running the app, paste your API key into the sidebar field labeled `Gemini API key`.
-
-## Project Structure
-
-The project is organized into separate modules for the main Streamlit app, PDF processing, Gemini integration, prompt templates, RAG retrieval, UI helpers, and each application tab. This keeps the code easier to maintain and makes the responsibilities of each file clear.
-
-```text
-AI-Learning-Assistant/
-├── app.py              # Main Streamlit entry point
-├── config.py           # Configuration values, model options, defaults, and session state keys
-├── ui.py               # Sidebar, API key input, session state setup, and PDF upload handling
-├── display_utils.py    # Streamlit display helpers, PDF preview, debug views, and download buttons
-├── pdf_utils.py        # PDF text extraction, text cleaning, and overlapping chunk generation
-├── gemini_utils.py     # Gemini API key handling, client creation, and text generation helper
-├── rag_utils.py        # Local embeddings, semantic similarity scoring, and relevant chunk retrieval
-├── prompts.py          # Prompt templates for summaries, quizzes, and PDF question answering
-├── summary_tab.py      # Summary tab logic and map-reduce summary generation
-├── quiz_tab.py         # Quiz tab logic, chunk selection, and quiz generation
-├── qa_tab.py           # Ask PDF tab logic, RAG retrieval, and answer generation
-├── requirements.txt    # Python dependencies
-├── assets/             # Screenshots used in the README
-├── LICENSE             # Project license
-└── README.md           # Project documentation
-```
 
 ---
 ⭐ **Star if you like the project!**  
