@@ -175,7 +175,7 @@ streamlit run app.py
 
 This app requires a Gemini API key to generate summaries, quizzes, and answers.
 
-You can get a Gemini API key from Google AI Studio: https://aistudio.google.com/app/apikey
+You can get a Gemini API key from [Google AI Studio](https://aistudio.google.com/app/apikey).
 
 After running the app, paste your API key into the sidebar field labeled `Gemini API key`.
 
