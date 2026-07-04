@@ -120,8 +120,6 @@ The Ask PDF tab retrieves the most relevant chunks using local embeddings and us
 
 ## Project Structure
 
-The project is organized into separate modules for the main Streamlit app, PDF processing, Gemini integration, prompt templates, RAG retrieval, UI helpers, and each application tab. This keeps the code easier to maintain and makes the responsibilities of each file clear.
-
 ```text
 AI-Learning-Assistant/
 ├── app.py              # Main Streamlit entry point
@@ -140,6 +138,8 @@ AI-Learning-Assistant/
 ├── LICENSE             # Project license
 └── README.md           # Project documentation
 ```
+
+The project is organized into separate modules for the main Streamlit app, PDF processing, Gemini integration, prompt templates, RAG retrieval, UI helpers, and each application tab. This keeps the code easier to maintain and makes the responsibilities of each file clear.
 
 ## Technologies
 
