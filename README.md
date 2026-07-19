@@ -4,6 +4,13 @@ AI Learning Assistant is a **Streamlit web application** built to support studyi
 
 The application uses a modular pipeline: **PDF text extraction**, **text cleaning**, **overlapping chunk generation**, **Gemini-based text generation**, and **lightweight retrieval-augmented question answering**. For Q&A, local sentence-transformer embeddings are used to retrieve the most relevant chunks before passing the context to Gemini, helping keep answers focused on the source document.
 
+## Live Demo
+
+**Try the application online:**  
+[Open AI Learning Assistant](https://mateusz-ai-learning-assistant.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://mateusz-ai-learning-assistant.streamlit.app/)
+The application requires a Gemini API key. You can provide your own key securely in the app sidebar.
+
 ## Features
 
 ### PDF Processing
